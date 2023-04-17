@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>cal</title>
+</head>
+<body>
+
+<%
+
+if(request.getParameter("value")!=""){
+	String c = request.getParameter("value");
+int a = Integer.parseInt(c);
+	if(a<10)
+		response.sendRedirect("page1.jsp");
+	else if(a>10 && a<99)
+		response.sendRedirect("page2.jsp");
+}
+else{
+response.sendRedirect("ErrorPage.jsp");
+}
+
+%>
+
+
+</body>
+</html>

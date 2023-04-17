@@ -1,0 +1,9 @@
+127.0.0.1 - - [07/Jul/2022:23:54:59 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [07/Jul/2022:23:55:01 +0530] "GET /First_project/index.html HTTP/1.1" 200 572
+0:0:0:0:0:0:0:1 - - [07/Jul/2022:23:55:01 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [07/Jul/2022:23:55:57 +0530] "POST /First_project/myservlet HTTP/1.1" 404 779
+0:0:0:0:0:0:0:1 - - [07/Jul/2022:23:57:26 +0530] "POST /First_project/myservlet HTTP/1.1" 404 779
+0:0:0:0:0:0:0:1 - - [07/Jul/2022:23:57:35 +0530] "GET /First_project/index.html HTTP/1.1" 200 570
+0:0:0:0:0:0:0:1 - - [07/Jul/2022:23:58:01 +0530] "POST /First_project/myservlet HTTP/1.1" 404 779
+0:0:0:0:0:0:0:1 - - [07/Jul/2022:23:58:40 +0530] "GET /First_project/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Jul/2022:23:58:53 +0530] "POST /First_project/myservlet HTTP/1.1" 404 779

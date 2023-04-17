@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="java.util.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Main</title>
+</head>
+<body >
+
+<form action="calculation.jsp" > 
+<label align="centre">Enter your number : </label> <input type="text" name="value" placeholder="Enter your value"><br>
+<input type="submit">
+</form>
+
+
+</body>
+</html>

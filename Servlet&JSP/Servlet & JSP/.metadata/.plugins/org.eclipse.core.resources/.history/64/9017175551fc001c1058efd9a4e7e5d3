@@ -1,0 +1,47 @@
+package com.util;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class Dao {
+	static PreparedStatement ps, ps1;
+	static Connection conn = DbConnection.getConnection();
+	static {
+		try {
+			ps = conn.prepareStatement("select * from usertable where username=? and password=?");
+			ps1 = conn.prepareStatement("select * from training");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public static String loginMe(String username, String password) throws SQLException {
+		ps.setString(1, username);
+		ps.setString(2, password);
+		ResultSet rs = ps.executeQuery();
+		if(rs.next()) {
+			return rs.getString("usertype");
+		}else {
+			return null;
+		}
+	}
+	
+	public static void getTrainingList() throws SQLException {
+		ResultSet rs = ps1.executeQuery();
+		ArrayList<ArrayList<Object>> list = new ArrayList<>();
+		while(rs.next()) {
+			Object trainingId = rs.getInt(0);
+			Object TrainingName, = rs.getInt(1);
+			Object Start_Date = rs.getInt(2);
+			Object EndDate = rs.getInt(3);
+			Object TrainingMode = rs.getInt(4);
+			Object BusinisessUnit = rs.getInt(5);
+			Object ContactpersonID = rs.getInt(6);
+			
+		}
+	}
+}
